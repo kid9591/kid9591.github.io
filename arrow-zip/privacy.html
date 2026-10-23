@@ -17,37 +17,42 @@
 <main class="wrap">
 <article class="doc">
 <h1>Privacy Policy</h1>
-<p class="date">Last updated: October 22, 2026</p>
+<p class="date">Last updated: October 23, 2026</p>
 
 <p>This policy explains how <strong>Arrow Zip: Tap Away Puzzle</strong> ("the game"), made by HDC Studio ("we", "us"),
-handles information. In short: <strong>your game is saved on your phone and, when you are signed in to Google Play
-Games, in your Google Play Games account so you can continue on another phone; if you open the leaderboard, the number
-of levels you have cleared is shown there too. The only other data that leaves your phone is what the coin shop needs:
-prices and purchase records.</strong> There are no accounts of our own, no analytics and no advertising.</p>
+handles information. In short: <strong>your game is saved on your phone, and a copy is kept on our own small server
+under a random player ID so you can continue on another phone. If you open the leaderboard, the number of levels you
+have cleared is shown there under a made-up name. The coin shop needs prices and purchase records.</strong> There are
+no accounts, no names or emails, no analytics and no advertising.</p>
 
 <h2>1. Information stored on your device</h2>
 <p>To keep your game going, the game saves data such as your level progress, coins, boosters, the pictures in your
 album, your win streak, daily challenge progress, settings (sound, vibration, language) and a list of your recent
 purchases with their order numbers on your device. We cannot see or access it.</p>
 
-<h2>2. Cloud save with Google Play Games</h2>
-<p>If your phone is signed in to <strong>Google Play Games</strong>, the game signs in automatically and keeps a copy
-of your progress in Google Play Games' saved games, so that reinstalling the game or moving to a new phone keeps your
-levels, coins, album and purchases. The copy contains your level progress, coins, boosters, album pictures, win streak,
-daily challenge progress, a few one-time flags (for example whether the "blocked arrow" tip was already shown) and the record of
-purchases already delivered (product, date, order number and the purchase-validation transaction ID, so that a
-purchase is never delivered twice). Sound, vibration and language settings stay on each phone.</p>
-<p>The copy is stored by Google in your Google Play Games account; we do not receive it and cannot see it. Signing in
-also lets Google Play Games know that you play this game, as described in Google's policy. If you are not signed in, or
-sign-in is not available, the game works the same, only without the cloud copy. You can delete the copy from your
-Google Play Games settings (its data for this game, or your whole Play Games profile), or ask us how by email.</p>
+<h2>2. Cloud save on our server</h2>
+<p>When your device is online, the game keeps a copy of your progress on our server (HDC Backend, run by us on
+Cloudflare), so that reinstalling the game or moving to a new phone keeps your levels, coins, album and purchases.
+The first time the game goes online (automatically, when it starts), our server issues a <strong>random player
+ID</strong> and a random key for this installation; there is no sign-in and no name, email or phone number. The copy
+contains your level progress, coins, boosters, album pictures and paid album pages, win streak, the last daily
+challenge you finished, a one-time flag (whether the "blocked arrow" tip was shown), any coins our support team added
+for you, and the record of purchases already delivered (product, date, order number and the purchase-validation
+transaction ID, so that a purchase is never delivered twice). The game also tells our server the random purchase ID
+of section 4, so that the purchase events RevenueCat forwards (section 6) belong to your player ID and are deleted
+with it. Sound, vibration and language settings stay on each phone.</p>
+<p><strong>Moving to another phone:</strong> Settings › <em>Move to another device</em> shows an 8-character code that
+works once, for 15 minutes. Typing it on the new phone links that phone to the same player ID. Never give the code to
+anyone else: whoever enters it gets your progress.</p>
+<p>You can turn this off and delete the copy at any time in Settings › <em>Delete cloud data</em> (see section 7).</p>
 
 <h2>3. Leaderboard</h2>
-<p>The Home screen has a button for the Google Play Games leaderboard <strong>Highest level</strong>. Only after you
-have opened it once with your Play Games account, the game sends Google the number of levels you have cleared (a
-number from 1 to 300) while you are signed in. Google shows the leaderboard to other players together with your Google
-Play Games profile name and picture; who can see you depends on your Google Play Games profile visibility settings.
-Nothing else about you or your game is sent. If you never open the leaderboard, or are not signed in, no score is sent.</p>
+<p>The Home screen has a <strong>Ranking</strong> button. Only after you have opened it once, the game sends our
+server the number of levels you have cleared (a number from 1 to 300). Other players see it next to a
+<strong>made-up name</strong> that the server picks for you, such as "Sunny Otter 482" - players cannot choose or type a
+name, and nothing else about you is shown. You can hide yourself at any time with <em>Hide me from the
+leaderboard</em> on the same screen: your entry is removed from the leaderboard and the game stops sending your score
+(<em>Show me on the leaderboard</em> brings it back).</p>
 
 <h2>4. In-app purchases</h2>
 <p>You can buy coin packs with real money. Payments are handled by <strong>Google Play</strong>; we never see your card
@@ -70,35 +75,47 @@ and never used for advertising.</p>
 <ul>
   <li><strong>Vibration</strong> — a short buzz when an arrow flies out, when an arrow is blocked, or when you clear a
   level (can be turned off in Settings).</li>
-  <li><strong>Internet and network state</strong> — only to talk to Google Play, Google Play Games and RevenueCat (at
-  start-up, when you buy, when your progress is saved to Google Play Games and when your level is sent to the
-  leaderboard). The game itself plays fully offline.</li>
+  <li><strong>Internet and network state</strong> — only to talk to Google Play, RevenueCat and our server (at
+  start-up, when you buy, when your progress is saved - usually when you leave the game -, when you open the
+  leaderboard or move to another device). The game itself plays fully offline.</li>
   <li><strong>Google Play billing</strong> — to show the Google Play payment sheet.</li>
 </ul>
 
 <h2>6. Third-party services</h2>
 <ul>
-  <li>Google Play (payments) and Google Play Games (sign-in, cloud save and leaderboard) — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-  <li>RevenueCat (purchase validation) — <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li>
+  <li>Google Play (payments) — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li>RevenueCat (purchase validation) — <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.
+  RevenueCat also forwards each purchase event of this game to our server as RevenueCat records it (for example
+  product, price, currency, country, time, order number, store and the random purchase ID of section 4), so that we can
+  help with purchase problems and refunds.</li>
+  <li>Cloudflare (hosts our server) — <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>.
+  Cloudflare sees the IP address of each connection to deliver it and to limit abuse; we have switched off request
+  logging on our server and do not store IP addresses.</li>
 </ul>
-<p>The game contains no analytics, advertising or tracking services. Google Play's billing library and the Google Play
-Games SDK may send Google diagnostic data about the payment and sign-in flows, as described in Google's policy.</p>
+<p>The game contains no analytics, advertising or tracking services. Google Play's billing library may send Google
+diagnostic data about the payment flow, as described in Google's policy.</p>
 
 <h2>7. Keeping and deleting your data</h2>
-<p>Data on your device stays until you uninstall the game or clear its storage. We hold no copy of it: progress can
-only be restored from the Google Play Games copy (section 2). Purchase records are kept by Google Play and RevenueCat
-for as long as needed for bookkeeping, refunds and legal obligations. To have the purchase records linked to your
-player ID deleted, email us and we will delete them within 30 days. Step-by-step instructions:
+<p>Data on your device stays until you uninstall the game or clear its storage. The copy on our server (sections 2, 3 and 6) stays until you delete it: in the game, open Settings › <em>Delete cloud
+data</em>, which removes your saved copy, your leaderboard entry, transfer codes, coins added by support and the
+purchase events linked to your player ID, on every device at once, and turns cloud save off. A purchase made while
+cloud save was off is stored on our server without a player ID (it is attached to your new player ID, and deleted with
+it, if you turn cloud save back on); you can also email us its order number (it starts with "GPA.") and we delete it
+within 30 days. If you no longer have the game, the copy cannot be matched to you - it is
+linked to no name or contact detail - unless you can tell us your leaderboard name or an order number; email us and we
+will tell you what we could find and delete it within 30 days. Purchase records are also kept by Google Play and
+RevenueCat for as long as needed for bookkeeping, refunds and legal obligations; we delete RevenueCat's records of your
+purchases on request too. Step-by-step instructions:
 <a href="delete-data.html">Delete your data</a>.</p>
 
 <h2>8. Children</h2>
 <p>The game is suitable for all ages and never asks anyone, of any age, for a name, email, age or other contact details.
-The limited data in section 4 (a random player ID, purchase records and the technical data of each request, including
-the IP address) is processed for every player, children included, only to validate and deliver purchases and to answer
-support requests - never for advertising, tracking or profiling. A parent can ask us to delete it (section 7). Signing in to Google Play Games is optional. When signed in and after opening the
-leaderboard, the player's Play Games profile name and highest level can be seen by other players; parents can manage or
-hide a child's Play Games profile in the Google Play Games and Family Link settings. Purchases are made through Google
-Play, where parents can require approval for every purchase in Google Play's family settings.</p>
+The data described above (a random player ID, the game copy, an optional leaderboard score under a made-up name,
+purchase records and the technical data of each request, including the IP address) is processed for every player,
+children included, only to run cloud save, the leaderboard and purchases and to answer support requests - never for
+advertising, tracking or profiling. A child appears on the leaderboard only after opening it, under a made-up name, and
+can hide again at any time; a parent can delete everything from Settings or ask us (section 7). Purchases are made
+through Google Play, where parents can require approval for every purchase in Google Play's family settings.</p>
 
 <h2>9. Your rights</h2>
 <p>Depending on where you live (for example under the GDPR or CCPA), you may have the right to access, correct, delete
