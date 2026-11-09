@@ -60,6 +60,7 @@ article.doc { background: var(--card); border: 1px solid var(--line); border-rad
 article.doc h1 { font-size: 30px; margin-bottom: 0; }
 article.doc .date { color: var(--muted); margin-top: 4px; }
 article.doc h2 { font-size: 20px; margin-top: 28px; }
+article.doc h3 { font-size: 17px; margin-top: 20px; }
 article.doc li { margin: 4px 0; }
 
 footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
