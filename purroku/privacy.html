@@ -23,7 +23,7 @@
 handles information. In short: <strong>your game is saved on your phone. Once you win a level online, open your profile
 or create a transfer code, a copy of your progress is also kept on our own small server under a random player ID, so you
 can move to another phone, and your leaderboard entry (a name you can choose, an avatar, and your results) is shown to
-other players. Purchases go through Google Play and need prices and purchase records.</strong> There are no accounts with an email or password and no advertising; the game does collect anonymous usage statistics (Firebase / Google Analytics, section 5). The game is meant for players aged 13 and over.</p>
+other players. Purchases go through Google Play and need prices and purchase records.</strong> There are no accounts with an email or password and no advertising; the game does collect anonymous usage statistics (Firebase, section 5). The game is meant for players aged 13 and over.</p>
 
 <h2>1. Information stored on your device</h2>
 <p>To keep your game going, the game saves data such as your level progress, the cats you have found, your points,
@@ -79,8 +79,8 @@ and never used for advertising.</p>
   <li><strong>Google Play billing</strong> — to show the Google Play payment sheet.</li>
 </ul>
 
-<h2>5. Analytics (Firebase and Google Analytics)</h2>
-<p>To understand how the game is used and to find problems, the game uses Firebase Analytics (Google
+<h2>5. Analytics and crash reports (Firebase)</h2>
+<p>To understand how the game is used and to fix problems, the game uses Firebase Analytics (Google
 Analytics for Firebase), a service provided by Google. It starts when the game opens and works in the background; there is
 nothing to sign in to. Google Analytics receives, for each installation:</p>
 <ul>
@@ -99,6 +99,12 @@ automatically. Google processes it as described in
 <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. Uninstalling the game or clearing its storage
 resets your app-instance ID, and you can email us (see Contact) with any request about this data.</p>
 
+<p><strong>Crash reports.</strong> The game also uses Firebase Crashlytics, another Google service. If the game crashes
+or hits a serious error, a crash report is sent to Google the next time it runs. It contains the technical details of the
+error (the stack trace), the app version, the device model and operating system version, the state of the device at that
+moment (for example free memory and storage, orientation, whether the device is rooted) and a random installation ID.
+It contains no name, email or Purroku player ID. We use it only to find and fix crashes, and Google keeps it for 90 days.</p>
+
 <h2>6. Third-party services</h2>
 <ul>
   <li>Google Play (payments) — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
@@ -107,10 +113,10 @@ resets your app-instance ID, and you can email us (see Contact) with any request
   Cloudflare processes the IP address of each connection to deliver it and to limit abuse (for example too many new
   players from one address), as described in its policy. Our own database and logs do not contain IP addresses, and we
   have switched off request logging on our server.</li>
-  <li>Google (Firebase / Google Analytics, usage statistics) — <a href="https://policies.google.com/privacy">Google Privacy Policy</a>,
+  <li>Google (Firebase Analytics for usage statistics and Firebase Crashlytics for crash reports) — <a href="https://policies.google.com/privacy">Google Privacy Policy</a>,
   <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a></li>
 </ul>
-<p>The game contains no advertising or cross-app tracking services; the only analytics is the Firebase / Google Analytics described in section 5. Google Play's billing library may send Google
+<p>The game contains no advertising or cross-app tracking services; the only analytics and crash reporting are the Firebase services described in section 5. Google Play's billing library may send Google
 diagnostic data about the payment flow, as described in Google's policy.</p>
 
 <h2>7. Keeping and deleting your data</h2>
