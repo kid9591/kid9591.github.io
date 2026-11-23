@@ -17,7 +17,7 @@
 <main class="wrap">
 <article class="doc">
 <h1>Privacy Policy</h1>
-<p class="date">Last updated: November 22, 2026</p>
+<p class="date">Last updated: November 23, 2026</p>
 
 <p>This policy explains how <strong>Purroku: Cat Hunt Puzzle</strong> ("the game"), made by HDC Studio ("we", "us"),
 handles information. In short: <strong>your game is saved on your phone. Once you win a level online, open your profile
@@ -81,23 +81,27 @@ and never used for advertising.</p>
 
 <h2>5. Analytics and crash reports (Firebase)</h2>
 <p>To understand how the game is used and to fix problems, the game uses Firebase Analytics (Google
-Analytics for Firebase), a service provided by Google. It starts when the game opens and works in the background; there is
-nothing to sign in to. Google Analytics receives, for each installation:</p>
+Analytics for Firebase), a service provided by Google. It is on by default, starts when the game opens and works in the background; there is
+nothing to sign in to, and you can turn it off in the game (see below). Google Analytics receives, for each installation:</p>
 <ul>
   <li>a random app-instance ID created on your device (not linked to your name, email, Google account or your Purroku
   player ID; it is reset when you uninstall the game or clear its data),</li>
-  <li>events about how you use the game, for example that the game was opened, a level was started, won or failed, a daily
-  challenge was played, a hint was used, a purchase was completed (an event count only, not a purchase record), and how long a session lasted,</li>
+  <li>events about how you play: a level was started, completed (with its chapter and level number, the time it took, how
+  many hearts were left and whether you lost none) or failed; a purchase was started, completed or failed (with the product ID and,
+  if it failed, a short reason - never your payment details); that restoring purchases was tapped; and the automatic events
+  Firebase records on its own, such as the first time the game is opened and the start and length of a session,</li>
   <li>basic technical data: app version, device model, operating system version, device language, and an approximate
   location (country or city) derived from the IP address of the connection. Google does not store the IP address itself
   in Analytics reports.</li>
 </ul>
-<p>We use this data only in aggregated form, to improve the game. We do not use it for advertising, we do not sell it,
+<p>We use this data only in aggregated form, to improve the game. The game does not use the Android advertising ID: its permission
+is removed from the app and Firebase's collection of it is switched off. We do not use the data for advertising, we do not sell it,
 and we do not combine it with your profile, name or purchases. Analytics data is kept by Google for up to 14 months and then deleted
 automatically. Google processes it as described in
 <a href="https://policies.google.com/technology/partner-sites">How Google uses data</a> and the
-<a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. Uninstalling the game or clearing its storage
-resets your app-instance ID, and you can email us (see Contact) with any request about this data.</p>
+<a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. You can turn analytics off at any time in the game: <em>Settings › Share anonymous analytics</em>
+(<em>Cài đặt › Chia sẻ phân tích ẩn danh</em> in Vietnamese). Once it is off, the game stops collecting and sending this data. Uninstalling the game or
+clearing its storage resets your app-instance ID, and you can email us (see Contact) with any request about this data.</p>
 
 <p><strong>Crash reports.</strong> The game also uses Firebase Crashlytics, another Google service. If the game crashes
 or hits a serious error, a crash report is sent to Google the next time it runs. It contains the technical details of the
@@ -123,7 +127,7 @@ diagnostic data about the payment flow, as described in Google's policy.</p>
 <p>Data on your device stays until you uninstall the game or clear its storage. Android may also back up the game's data
 (including your player ID and secret key) to your Google account and restore it when you reinstall; you can turn this
 off in Android's backup settings. Your online profile, results and cloud
-save stay on our server until you delete them: in the game, open <em>Cài đặt › Xoá dữ liệu trực tuyến</em>, which deletes
+save stay on our server until you delete them: in the game, open <em>Settings › Delete online data</em> (<em>Cài đặt › Xoá dữ liệu trực tuyến</em> in Vietnamese), which deletes
 everything linked to your player ID at once. If the game is no longer installed, email us (see
 <a href="delete-data.html">Delete your data</a>) and, once we can confirm the profile is yours, we delete everything linked to your player ID within 30 days — profile, results, leaderboard entries,
 cloud save and transfer codes — and your name becomes free for others. Purchase records are also kept by Google Play and
