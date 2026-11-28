@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Static page: no script, no third-party resource, no cookie. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>HDC Studio — Indie mobile game studio</title>
+<meta name="description" content="HDC Studio is an independent mobile game studio from Vietnam making relaxing puzzle games for Android: Arrow Zip, Pour Master and Purroku.">
+<link rel="icon" href="purroku/img/favicon.png">
+<style>
+:root { --bg:#faf6ee; --card:#fff; --text:#262852; --muted:#6b6150; --accent:#a8520e; --line:#ece4d6; --on-accent:#fff; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#17182e; --card:#23244a; --text:#f4f1ea; --muted:#c3bba9; --accent:#ff9a45; --line:#34365f; --on-accent:#17182e; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+header.top { border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: center; gap: 12px; padding-top: 14px; padding-bottom: 14px; }
+.brand { font-weight: 800; font-size: 19px; color: var(--text); text-decoration: none; letter-spacing: .2px; }
+header.top nav { margin-left: auto; display: flex; gap: 16px; font-size: 15px; }
+header.top nav a { color: var(--muted); text-decoration: none; }
+header.top nav a:hover { color: var(--accent); }
+.hero { text-align: center; padding: 48px 0 28px; }
+.hero h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.15; margin: 0 0 12px; }
+.hero p { color: var(--muted); max-width: 620px; margin: 0 auto; }
+h2 { font-size: 24px; margin: 36px 0 14px; }
+.games { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+.game { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.game .head { display: flex; align-items: center; gap: 14px; }
+.game img { width: 64px; height: 64px; border-radius: 15px; flex: none; }
+.game h3 { margin: 0; font-size: 18px; line-height: 1.3; }
+.game p { margin: 0; color: var(--muted); font-size: 15px; }
+.game .links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 15px; }
+.btn { display: inline-block; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; padding: 7px 14px; border-radius: 999px; }
+section.text { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin-top: 36px; }
+section.text h2 { margin: 0 0 10px; }
+section.text p { margin: 0 0 10px; }
+section.text p:last-child { margin-bottom: 0; }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 40px; padding: 18px 0 28px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./">HDC Studio</a>
+    <nav><a href="#games">Games</a><a href="#advertising">Advertising</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>HDC Studio</h1>
+    <p>An independent mobile game studio from Vietnam. We make relaxing puzzle games for Android that are easy to pick up and playable offline.</p>
+  </section>
+
+  <h2 id="games">Our games</h2>
+  <div class="games">
+    <article class="game">
+      <div class="head"><img src="arrow-zip/img/icon-512.png" alt="" width="64" height="64"><h3>Arrow Zip: Tap Away Puzzle</h3></div>
+      <p>Tap arrows to send them off the board and colour in pictures for your album. 300 levels, plays offline.</p>
+      <div class="links">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=dev.hdcstudio.arrowzip" aria-label="Arrow Zip on Google Play">Google Play</a>
+        <a href="arrow-zip/" aria-label="Arrow Zip game page">Game page</a>
+        <a href="arrow-zip/privacy.html" aria-label="Arrow Zip privacy policy">Privacy policy</a>
+      </div>
+    </article>
+    <article class="game">
+      <div class="head"><img src="pour-master/img/icon-512.png" alt="" width="64" height="64"><h3>Pour Master: Water Sort Puzzle</h3></div>
+      <p>Pour the liquid between tubes until every tube holds a single colour. 500 levels, plays offline.</p>
+      <div class="links">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=dev.hdcstudio.poursort" aria-label="Pour Master on Google Play">Google Play</a>
+        <a href="pour-master/" aria-label="Pour Master game page">Game page</a>
+        <a href="pour-master/privacy.html" aria-label="Pour Master privacy policy">Privacy policy</a>
+      </div>
+    </article>
+    <article class="game">
+      <div class="head"><img src="purroku/img/icon-512.png" alt="" width="64" height="64"><h3>Purroku: Cat Queens Puzzle</h3></div>
+      <p>A cozy logic puzzle about finding hidden cats: 260 levels in 26 places, a daily puzzle and leaderboards.</p>
+      <div class="links">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=dev.hdcstudio.purroku" aria-label="Purroku on Google Play">Google Play</a>
+        <a href="purroku/" aria-label="Purroku game page">Game page</a>
+        <a href="purroku/privacy.html" aria-label="Purroku privacy policy">Privacy policy</a>
+      </div>
+    </article>
+  </div>
+
+  <section class="text" aria-labelledby="advertising">
+    <h2 id="advertising">How we use advertising</h2>
+    <p>We promote our own games with Google Ads app campaigns. We do not run or manage advertising for other companies.</p>
+    <p>To see how our campaigns perform, we read the reports of our own Google Ads account through the Google Ads API, such as impressions, installs and cost. We only read data through the API; budgets and targeting are changed by our team in Google Ads itself. Only our team uses this data.</p>
+  </section>
+
+  <section class="text" aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <p>Questions, support or business enquiries: <a href="mailto:dev.hdcstudio@gmail.com">dev.hdcstudio@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 HDC Studio · Vietnam</div>
+</footer>
+</body>
+</html>
